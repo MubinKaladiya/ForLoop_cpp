@@ -1,0 +1,17 @@
+S → for ( INIT ; COND ; INC )
+
+INIT → TYPE ID = NUM
+
+COND → ID RELOP NUM
+
+INC → ID INCOP
+
+TYPE → int | float | char
+
+RELOP → < | > | <= | >= | == | !=
+
+INCOP → ++ | --
+
+This CFG defines the structure of a C++ for loop
+It ensures correct order: initialization, condition, increment
+Each component is broken into smaller rules
